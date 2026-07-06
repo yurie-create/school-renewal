@@ -1,0 +1,139 @@
+/* =====================
+   PAGE HERO
+===================== */
+.page-hero {
+    background: #f2efe9;
+    padding: 160px 40px 100px;
+  }
+  
+  .page-hero-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .page-hero h1 {
+    font-family: "Zen Old Mincho", serif;
+    font-size: clamp(36px, 5vw, 60px);
+    font-weight: 700;
+    color: #0a0a0a;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+  
+  .page-hero p {
+    font-size: 16px;
+    color: #999;
+    letter-spacing: 0.08em;
+  }
+  
+  /* =====================
+     PRIVACY
+  ===================== */
+  .privacy {
+    background: #fff;
+    padding: 100px 0 140px;
+  }
+  
+  .privacy-inner {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  
+  .privacy-intro {
+    font-size: 16px;
+    line-height: 2.1;
+    color: #555;
+    margin-bottom: 64px;
+    padding-bottom: 48px;
+    border-bottom: 1px solid #e8e3db;
+  }
+  
+  .privacy-block {
+    padding: 48px 0;
+    border-bottom: 1px solid #e8e3db;
+  }
+  
+  .privacy-block h2 {
+    font-size: 17px;
+    font-weight: 700;
+    color: #0a0a0a;
+    margin-bottom: 20px;
+    padding-left: 16px;
+    border-left: 3px solid #f56a24;
+  }
+  
+  .privacy-block p {
+    font-size: 15px;
+    line-height: 2.1;
+    color: #555;
+    margin-bottom: 16px;
+  }
+  
+  .privacy-block p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .privacy-block ul {
+    list-style: none;
+    margin-top: 12px;
+  }
+  
+  .privacy-block ul li {
+    font-size: 15px;
+    line-height: 2;
+    color: #555;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  .privacy-block ul li::before {
+    content: "–";
+    position: absolute;
+    left: 0;
+    color: #f56a24;
+    font-weight: 700;
+  }
+  
+  .privacy-contact {
+    margin-top: 20px;
+    padding: 24px 28px;
+    background: #f7f5f2;
+    border-left: 3px solid #f56a24;
+  }
+  
+  .privacy-contact p {
+    font-size: 15px;
+    color: #444;
+    margin-bottom: 6px;
+  }
+  
+  .privacy-contact a {
+    color: #f56a24;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+  
+  .privacy-date {
+    margin-top: 48px;
+    font-size: 13px;
+    color: #aaa;
+    letter-spacing: 0.06em;
+  }
+  
+  /* =====================
+     RESPONSIVE
+  ===================== */
+  @media (max-width: 768px) {
+    .page-hero {
+      padding: 120px 24px 72px;
+    }
+  
+    .privacy-inner {
+      padding: 0 24px;
+    }
+  
+    .privacy-block {
+      padding: 36px 0;
+    }
+  }

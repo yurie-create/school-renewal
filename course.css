@@ -1,0 +1,163 @@
+/* =====================
+   PAGE HERO
+===================== */
+.page-hero {
+    background: #f2efe9;
+    padding: 160px 40px 100px;
+  }
+  
+  .page-hero-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .page-hero h1 {
+    font-family: "Zen Old Mincho", serif;
+    font-size: clamp(40px, 6vw, 72px);
+    font-weight: 700;
+    color: #0a0a0a;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+  
+  .page-hero p {
+    font-size: 16px;
+    color: #999;
+    letter-spacing: 0.08em;
+  }
+  
+  /* =====================
+     SCHEDULE
+  ===================== */
+  .schedule {
+    background: #fff;
+    padding: 120px 0;
+  }
+  
+  .schedule-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  
+  .schedule-inner h2 {
+    font-family: "Zen Old Mincho", serif;
+    font-size: clamp(28px, 3vw, 40px);
+    font-weight: 700;
+    color: #0a0a0a;
+    margin-bottom: 64px;
+  }
+  
+  .course-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  
+  .course-card {
+    border: 1px solid #e8e3db;
+  }
+  
+  .course-card-header {
+    background: #e8e4dc;
+    padding: 20px 32px;
+  }
+  
+  .course-badge {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: #f56a24;
+  }
+  
+  .course-card-body {
+    padding: 32px;
+  }
+  
+  .course-row {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 16px;
+    padding: 24px 0;
+    border-bottom: 1px solid #f0ece6;
+    align-items: start;
+  }
+  
+  .course-row:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  
+  .course-row:first-child {
+    padding-top: 0;
+  }
+  
+  .course-label {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: #f56a24;
+    padding-top: 3px;
+  }
+  
+  .course-value p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #0a0a0a;
+    line-height: 1.9;
+  }
+  
+  .course-card-soon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 56px 32px;
+    gap: 12px;
+  }
+  
+  .course-soon-label {
+    font-family: "Zen Old Mincho", serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #0a0a0a;
+  }
+  
+  .course-soon-text {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .course-soon-link {
+    margin-top: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #f56a24;
+    letter-spacing: 0.06em;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+  
+  
+  
+  /* =====================
+     RESPONSIVE
+  ===================== */
+  @media (max-width: 768px) {
+    .page-hero {
+      padding: 120px 24px 72px;
+    }
+  
+    .schedule-inner {
+      padding: 0 24px;
+    }
+  
+    .course-cards {
+      grid-template-columns: 1fr;
+    }
+  
+    .course-row {
+      grid-template-columns: 80px 1fr;
+    }
+  }
