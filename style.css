@@ -1012,8 +1012,7 @@
   align-items: center;
   justify-content: center;
 
-  background: url("images/loading-bg.webp") center center / cover no-repeat;
-
+  
   overflow: hidden;
 
   transition: transform 0.7s cubic-bezier(0.76, 0, 0.24, 1);
