@@ -1012,7 +1012,7 @@
   align-items: center;
   justify-content: center;
 
-  background: url("images/loading-bg.jpg") center center / cover no-repeat;
+  background: url("images/loading-bg.webp") center center / cover no-repeat;
 
   overflow: hidden;
 
