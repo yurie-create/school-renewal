@@ -12,6 +12,9 @@
    <meta property="og:url" content="https://school.sieg-sports.com/">
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@500;700&family=Noto+Sans+JP:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="images/loading-bg.webp">
+<link rel="preload" as="image" href="images/mascot2.webp">
+<link rel="preload" as="image" href="images/hero.webp">
 <!-- Google tag (gtag.js) -->
  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LF31X8Z072"></script> 
  <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-LF31X8Z072'); </script> 
@@ -296,31 +299,40 @@
     const loadingText = document.querySelector('.loading-text');
     loadingText.textContent = '昨日の自分を超える。';
  
-    window.addEventListener('load', () => {
-      setTimeout(() => {
-        loadingScreen.classList.add('loading-hide');
-        setTimeout(() => {
-          loadingScreen.style.display = 'none';
- 
-          // h1の文字アニメーション開始
-          const h1 = document.querySelector('.hero h1');
-          h1.style.visibility = 'visible';
-          const lines = ['走ることを通して、', '努力を楽しめる', '子どもへ。'];
-          h1.innerHTML = lines.map(line =>
-            `<span class="hero-line">${line.split('').map(char =>
-              `<span class="hero-char">${char}</span>`
-            ).join('')}</span>`
-          ).join('<br>');
-          let delay = 0.3;
-          document.querySelectorAll('.hero-char').forEach(char => {
-            char.style.animationDelay = `${delay}s`;
-            delay += 0.07;
-          });
- 
-        }, 700);
-      }, 3500);
-    });
+    document.addEventListener('DOMContentLoaded', () => {
+  setTimeout(() => {
+    loadingScreen.classList.add('loading-hide');
 
+    setTimeout(() => {
+      loadingScreen.style.display = 'none';
+
+      // h1の文字アニメーション開始
+      const h1 = document.querySelector('.hero h1');
+      h1.style.visibility = 'visible';
+
+      const lines = [
+        '走ることを通して、',
+        '努力を楽しめる',
+        '子どもへ。'
+      ];
+
+      h1.innerHTML = lines.map(line =>
+        `<span class="hero-line">${line.split('').map(char =>
+          `<span class="hero-char">${char}</span>`
+        ).join('')}</span>`
+      ).join('<br>');
+
+      let delay = 0.3;
+
+      document.querySelectorAll('.hero-char').forEach(char => {
+        char.style.animationDelay = `${delay}s`;
+        delay += 0.07;
+      });
+
+    }, 700);
+
+  }, 3500);
+});
     // ハンバーガーメニュー
     const hamburger = document.querySelector(".hamburger");
     const mobileMenu = document.querySelector(".mobile-menu");
